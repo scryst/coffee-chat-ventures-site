@@ -1,11 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
-  <!-- Coffee Cup -->
-  <path fill="#5E4B3E" d="M8,10v12c0,2.2,1.8,4,4,4h8c2.2,0,4-1.8,4-4V10H8z"/>
-  <!-- Coffee Handle -->
-  <path fill="#5E4B3E" d="M24,14v4c1.1,0,2-0.9,2-2s-0.9-2-2-2z"/>
-  <!-- Coffee Liquid -->
-  <path fill="#3A2213" d="M10,12v10c0,1.1,0.9,2,2,2h8c1.1,0,2-0.9,2-2V12H10z"/>
-  <!-- Steam -->
-  <path fill="#88A872" opacity="0.7" d="M14,6c0,0-1,1-1,2s1,2,1,2s1-1,1-2S14,6,14,6z"/>
-  <path fill="#88A872" opacity="0.7" d="M18,4c0,0-1,1-1,2s1,2,1,2s1-1,1-2S18,4,18,4z"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" fill="none">
+  <rect width="512" height="512" rx="128" fill="#F8F1E9"/>
+  <path d="M346 186C346 170.536 333.464 158 318 158H194C178.536 158 166 170.536 166 186V246C166 261.464 178.536 274 194 274H234V298C234 301.866 238.134 304.134 241.172 301.757L279 274H318C333.464 274 346 261.464 346 246V186Z" fill="#88A872"/>
+  <path d="M256 354C311.228 354 356 309.228 356 254C356 198.772 311.228 154 256 154C200.772 154 156 198.772 156 254C156 309.228 200.772 354 256 354Z" stroke="#5E3A24" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M256 194V254L296 274" stroke="#5E3A24" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

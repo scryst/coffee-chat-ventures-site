@@ -7,6 +7,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { fetchCoffeeData } from '@/lib/api';
 import { CoffeeBotData } from '@/lib/types';
+import { motion } from 'framer-motion';
 import ChatBubbles from '@/components/animations/ChatBubbles';
 import CommunityNetwork from '@/components/animations/CommunityNetwork';
 
@@ -93,16 +94,29 @@ export default function CoffeeBotPage() {
       
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 overflow-hidden">
-        <div className="absolute inset-0 z-0 opacity-20">
-          <div className="absolute top-20 left-10 w-32 h-32 rounded-full bg-latte"></div>
-          <div className="absolute bottom-20 right-10 w-40 h-40 rounded-full bg-matcha/30"></div>
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div 
+            className="absolute -top-20 -right-20 w-96 h-96 rounded-full bg-matcha/10"
+            animate={{ scale: [1, 1.05, 1], opacity: [0.5, 0.7, 0.5] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div 
+            className="absolute top-1/3 -left-20 w-80 h-80 rounded-full bg-coffee-light/15"
+            animate={{ scale: [1, 1.1, 1], opacity: [0.6, 0.8, 0.6] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          />
+          <motion.div 
+            className="absolute -bottom-20 right-1/3 w-72 h-72 rounded-full bg-cream/20"
+            animate={{ scale: [1, 1.15, 1], opacity: [0.5, 0.7, 0.5] }}
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+          />
         </div>
         
-        <div className="container-custom z-10 relative">
+        <div className="container mx-auto px-6 z-10 relative">
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="lg:w-1/2 text-center lg:text-left">
               <div className="inline-block mb-6">
-                <div className="bg-coffee-brown p-3 rounded-full shadow-lg">
+                <div className="bg-matcha p-3 rounded-full shadow-lg">
                   <FaCoffee className="h-12 w-12 text-white" />
                 </div>
               </div>
@@ -117,18 +131,27 @@ export default function CoffeeBotPage() {
               </p>
 
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                <a 
+                <motion.a 
                   href="https://discord.com/oauth2/authorize?client_id=1346747859189633074&scope=bot&permissions=2147601408"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-primary inline-flex items-center justify-center"
+                  className="inline-flex items-center px-6 py-3 bg-matcha text-white font-medium rounded-lg shadow-sm hover:bg-matcha/80 transition-colors duration-300"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
                 >
+                  <FaDiscord className="mr-2" />
                   Add to Discord
-                </a>
+                </motion.a>
                 
-                <Link href="#how-it-works" className="btn-secondary inline-flex items-center justify-center">
+                <motion.a 
+                  href="#how-it-works" 
+                  className="inline-flex items-center px-6 py-3 bg-cream text-coffee-brown font-medium rounded-lg shadow-sm hover:bg-cream-dark/50 transition-colors duration-300"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.98 }}
+                >
                   How It Works
-                </Link>
+                  <FaArrowRight className="ml-2" />
+                </motion.a>
               </div>
             </div>
             
@@ -143,8 +166,8 @@ export default function CoffeeBotPage() {
       </section>
 
       {/* Command Section */}
-      <section id="how-it-works" className="py-16 relative">
-        <div className="container-custom">
+      <section id="how-it-works" className="py-16 relative bg-gradient-to-br from-cream/50 to-matcha/10">
+        <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="section-title inline-flex items-center gap-2 justify-center">
               <FaCoffee className="h-6 w-6 text-matcha" />
@@ -161,14 +184,14 @@ export default function CoffeeBotPage() {
                 <div className="flex items-center mb-2">
                   <span className="text-matcha font-bold">Command:</span>
                 </div>
-                <code className="block bg-coffee-dark/10 p-3 rounded text-base">/coffee</code>
+                <code className="block bg-cream/50 p-3 rounded text-base">/coffee</code>
                 
                 <div className="flex items-center mt-6 mb-2">
                   <span className="text-matcha font-bold">Menu Options:</span>
                 </div>
                 <ul className="space-y-2">
                   {coffeeCommandOptions.map((option, index) => (
-                    <li key={index} className="bg-coffee-dark/10 p-2 rounded flex flex-col">
+                    <li key={index} className="bg-cream/50 p-2 rounded flex flex-col">
                       <span className="font-semibold">{option.name}</span>
                       <span className="text-xs text-coffee-light">{option.description}</span>
                     </li>
@@ -217,33 +240,39 @@ export default function CoffeeBotPage() {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {coffeeFeatures.map((feature, index) => (
-              <div key={index} className="card p-5 hover:shadow-lg transition-shadow">
+              <motion.div 
+                key={index} 
+                className="bg-white p-5 rounded-lg shadow-sm hover:shadow-lg transition-shadow"
+                whileHover={{ y: -5 }}
+              >
                 <div className="text-3xl mb-3">{feature.icon}</div>
                 <h3 className="text-lg font-bold mb-2 text-coffee-brown">{feature.title}</h3>
                 <p className="text-coffee-light text-sm">{feature.description}</p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 bg-matcha/10 relative">
-        <div className="container-custom">
-          <div className="card max-w-3xl mx-auto text-center">
+      <section className="py-16 bg-gradient-to-br from-cream/50 to-matcha/10 relative">
+        <div className="container mx-auto px-6">
+          <div className="bg-white max-w-3xl mx-auto text-center p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold mb-4 text-coffee-brown">Ready to start networking?</h2>
             <p className="mb-6 text-coffee-light">
               Add Coffee Bot to your Discord server and start connecting with professionals today.
             </p>
-            <a 
+            <motion.a 
               href="https://discord.com/oauth2/authorize?client_id=1346747859189633074&scope=bot&permissions=2147601408"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary inline-flex items-center justify-center"
+              className="inline-flex items-center px-6 py-3 bg-matcha text-white font-medium rounded-lg shadow-sm hover:bg-matcha/80 transition-colors duration-300"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
             >
               <FaCoffee className="mr-2" />
               Add Coffee Bot
-            </a>
+            </motion.a>
           </div>
         </div>
       </section>

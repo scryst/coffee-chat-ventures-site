@@ -25,22 +25,22 @@ export default function Navbar() {
     <nav 
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled 
-          ? 'py-2 bg-white shadow-md' 
-          : 'py-4 bg-transparent'
+          ? 'py-3 bg-white shadow-md' 
+          : 'py-5 bg-transparent'
       }`}
     >
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-6">
         <div className="flex justify-between items-center">
           {/* Logo */}
           <Link href="/" className="flex items-center">
-            <div className="bg-coffee-brown p-2 rounded-full mr-2">
+            <div className="bg-matcha p-2 rounded-full mr-3">
               <FaCoffee className="text-white text-xl" />
             </div>
             <span className="font-bold text-xl text-coffee-brown">Coffee Chat Ventures</span>
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-6">
+          <div className="hidden md:flex items-center space-x-8">
             <Link href="/" className="text-coffee-brown hover:text-matcha transition-colors">
               Home
             </Link>
@@ -56,6 +56,14 @@ export default function Navbar() {
             <Link href="/contact" className="text-coffee-brown hover:text-matcha transition-colors">
               Contact
             </Link>
+            <a 
+              href="https://discord.com/invite/KGE8BfruV4" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-matcha hover:bg-matcha/80 text-white px-4 py-2 rounded-lg inline-flex items-center transition-colors duration-300"
+            >
+              Join Discord
+            </a>
           </div>
 
           {/* Mobile Menu Button */}
@@ -82,7 +90,7 @@ export default function Navbar() {
             : 'max-h-0 opacity-0 pointer-events-none'
         } overflow-hidden bg-white`}
       >
-        <div className="container mx-auto px-4 py-4 space-y-4">
+        <div className="container mx-auto px-6 py-6 space-y-5">
           <Link 
             href="/" 
             className="block text-coffee-brown hover:text-matcha transition-colors"
@@ -118,12 +126,12 @@ export default function Navbar() {
           >
             Contact
           </Link>
-          <div className="pt-4 border-t border-gray-200">
+          <div className="pt-5 border-t border-gray-200">
             <a 
-              href="https://discord.com/api/oauth2/authorize?client_id=1346747859189633074&permissions=2147601408&scope=bot%20applications.commands"
+              href="https://discord.com/invite/KGE8BfruV4"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-coffee-brown hover:bg-matcha text-white px-4 py-2 rounded-md inline-flex items-center transition-colors"
+              className="bg-matcha hover:bg-matcha/80 text-white px-6 py-3 rounded-lg inline-flex items-center transition-colors duration-300"
               onClick={() => setIsMenuOpen(false)}
             >
               Join Discord

@@ -22,6 +22,55 @@ Coffee Chat Ventures is a platform centered around a Discord bot named "Coffee" 
 
 ## Recent Updates
 
+- **Modern Design Overhaul**: Completely modernized the site's design:
+  - Removed handwritten fonts for a cleaner, more professional appearance
+  - Implemented a consistent color palette with matcha green, coffee tones, and cream accents
+  - Added dynamic animated background spheres that move freely within the viewport
+  - Enhanced visual hierarchy with better spacing and typography
+  - Created a more cohesive visual language across all pages
+
+- **Enhanced Visual Elements**:
+  - **Updated Favicon**: Created a modern, clean favicon combining coffee and chat elements
+  - **Consistent Button Styling**: Standardized button colors and hover effects across all pages
+  - **Icon Alignment**: Fixed alignment issues between icons and text throughout the site
+  - **Improved Spacing**: Better padding and margins for improved readability and visual flow
+  - **Dynamic Backgrounds**: Added animated spheres that maintain their positions across page navigation
+
+- **Improved User Experience**:
+  - **Simplified Navigation**: Streamlined the navigation menu for easier site exploration
+  - **Reduced Redundancy**: Removed duplicate Discord buttons for a cleaner interface
+  - **Enhanced Mobile Experience**: Improved responsive design for all device sizes
+  - **Interactive Elements**: Added subtle hover effects and animations to improve engagement
+  - **Coming Soon Badges**: Added clear indicators for upcoming features and events
+
+- **Technical Improvements**:
+  - **Performance Optimization**: Reduced unnecessary re-renders and improved component efficiency
+  - **Code Organization**: Better structured components and contexts for maintainability
+  - **Consistent Styling**: Implemented a more consistent approach to styling across the site
+  - **Accessibility Improvements**: Enhanced keyboard navigation and screen reader support
+  - **Cross-Browser Compatibility**: Ensured consistent appearance and functionality across browsers
+
+- **Navigation Improvements**:
+  - Simplified the navigation menu to focus on core pages
+  - Added a prominent "Join Discord" button in the navbar
+  - Updated mobile menu for better usability
+  - Fixed broken links and removed placeholder pages
+
+- **Events Page Enhancements**:
+  - Added more diverse event types with appropriate icons
+  - Implemented consistent card styling with category-specific colors
+  - Improved "Host Your Own Event" section with better visual cues
+
+- **Channels Page Updates**:
+  - Standardized channel card animations and interactions
+  - Improved spacing and layout for channel categories
+  - Enhanced visual separation between different channel types
+
+- **Home Page Refinements**:
+  - Updated hero section with more engaging animations
+  - Improved feature highlights with consistent icon styling
+  - Enhanced "About" section with better visual hierarchy
+
 - **Animated Components**: Replaced static placeholder images with engaging animations:
   - **CoffeeCup**: An animated coffee cup with rising steam
   - **ChatBubbles**: An animation demonstrating user interactions with the Coffee Chat Bot
@@ -49,7 +98,7 @@ Coffee Chat Ventures is a platform centered around a Discord bot named "Coffee" 
 - **Application ID**: 1346747859189633074
 - **Public Key**: 28a85824f5ec69afcf8edbb4452f4341cb7144990ba29f020525a5656a2bfd79
 - **OAuth URL**: https://discord.com/oauth2/authorize?client_id=1346747859189633074&permissions=2147601408&scope=bot%20applications.commands
-- **Community Server**: [Join our Discord community](https://discord.gg/KGE8BfruV4)
+- **Community Server**: [Join our Discord community](https://discord.com/invite/KGE8BfruV4)
 - **Required Permissions**: VIEW_CHANNEL, SEND_MESSAGES, EMBED_LINKS, ATTACH_FILES, READ_MESSAGE_HISTORY, USE_APPLICATION_COMMANDS
 
 ## Getting Started

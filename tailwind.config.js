@@ -12,6 +12,7 @@ module.exports = {
         'coffee-light': '#7D6B5D',
         'coffee-dark': '#3A2213',
         'cream': '#F8F1E9',
+        'cream-dark': '#D8C1A9',
         'latte': '#E8C8A9',
         'matcha': '#88A872',
         'matcha-dark': '#7A9964',
