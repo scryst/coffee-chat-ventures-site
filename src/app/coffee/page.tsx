@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import Image from 'next/image';
 import Link from 'next/link';
 import { FaCoffee, FaCode, FaServer, FaUsers, FaSpinner, FaArrowRight, FaDiscord, FaComments, FaLock, FaChartBar, FaBell, FaClock, FaFileAlt } from 'react-icons/fa';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { fetchCoffeeData } from '@/lib/api';
 import { CoffeeBotData } from '@/lib/types';
+import ChatBubbles from '@/components/animations/ChatBubbles';
+import CommunityNetwork from '@/components/animations/CommunityNetwork';
 
 export default function CoffeeBotPage() {
   const [coffeeData, setCoffeeData] = useState<CoffeeBotData | null>(null);
@@ -133,13 +134,7 @@ export default function CoffeeBotPage() {
             
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/coffee-bot-discord.jpg"
-                  alt="Coffee Bot Discord Integration"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                <ChatBubbles />
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-matcha/20 rounded-lg"></div>
               </div>
             </div>

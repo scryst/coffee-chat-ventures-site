@@ -18,12 +18,20 @@ Coffee Chat Ventures is a platform centered around a Discord bot named "Coffee" 
 - **Responsive Layout**: Optimized for all device sizes from mobile to desktop
 - **High-Quality Imagery**: Professional coffee-themed images throughout the site
 - **Cross-Server Functionality**: Information about how the bot connects users across different Discord servers
+- **Animated Components**: Custom animations that enhance user experience and engagement
 
 ## Recent Updates
 
+- **Animated Components**: Replaced static placeholder images with engaging animations:
+  - **CoffeeCup**: An animated coffee cup with rising steam
+  - **ChatBubbles**: An animation demonstrating user interactions with the Coffee Chat Bot
+  - **CommunityNetwork**: A network visualization representing community connections
+  - **EventCard**: Dynamic event cards with category-specific animations
 - **Local Image Storage**: All images are now stored locally in the `/public/images` and `/public/events` directories for improved reliability and faster loading
 - **Consistent Button Styling**: Updated Discord button colors to match the site's coffee-themed color scheme
 - **Fixed Image Display Issues**: Resolved issues with images not displaying properly on the home page and coffee bot page
+- **Added Favicon**: Custom coffee cup favicon for better brand recognition in browser tabs
+- **Simplified Contact Page**: Streamlined the contact page to focus on direct communication channels
 
 ## Tech Stack
 
@@ -32,6 +40,7 @@ Coffee Chat Ventures is a platform centered around a Discord bot named "Coffee" 
 - **Styling**: Tailwind CSS for responsive design
 - **Icons**: React Icons for consistent visual elements
 - **Image Optimization**: Next.js Image component for optimized loading
+- **Animation**: Framer Motion for smooth, interactive animations
 - **API**: Custom API endpoints to connect with the Discord bot
 - **Deployment**: Configured for Vercel deployment
 
@@ -95,6 +104,11 @@ This site is configured to be deployed on Vercel with the domain coffeechatventu
   - `Footer.tsx`: Site footer with social links and navigation
   - `Button.tsx`: Reusable button component with variants
   - `Card.tsx`: Card component for feature displays
+  - `/animations`: Custom animated components
+    - `CoffeeCup.tsx`: Animated coffee cup with steam
+    - `ChatBubbles.tsx`: Interactive chat bubble animations
+    - `CommunityNetwork.tsx`: Dynamic network visualization
+    - `EventCard.tsx`: Animated event card with category-specific effects
 - `/src/lib`: Utility functions, API clients, and types
   - `api.ts`: Functions for fetching data from Discord API
   - `types.ts`: TypeScript type definitions

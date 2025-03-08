@@ -3,63 +3,10 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { FaEnvelope, FaDiscord, FaInstagram, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaDiscord, FaInstagram, FaGithub } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 export default function ContactPage() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: ''
-  });
-  
-  const [formStatus, setFormStatus] = useState<{
-    submitted: boolean;
-    success: boolean;
-    message: string;
-  }>({
-    submitted: false,
-    success: false,
-    message: ''
-  });
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    setFormStatus({
-      submitted: true,
-      success: false,
-      message: 'Sending your message...'
-    });
-    
-    // In a real implementation, you would send the form data to your backend
-    // For now, we'll simulate a successful submission after a delay
-    setTimeout(() => {
-      setFormStatus({
-        submitted: true,
-        success: true,
-        message: 'Your message has been sent successfully! We\'ll get back to you soon.'
-      });
-      
-      // Reset form
-      setFormData({
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      });
-    }, 1500);
-  };
-
   return (
     <main className="min-h-screen">
       <Navbar />
@@ -169,95 +116,6 @@ export default function ContactPage() {
                 @scryst
               </a>
             </div>
-          </div>
-
-          <div className="card max-w-2xl mx-auto p-8">
-            <h2 className="text-2xl font-bold mb-6 text-coffee-brown text-center">Send Us a Message</h2>
-            
-            {formStatus.submitted && formStatus.success ? (
-              <div className="bg-green-50 text-green-700 p-4 rounded-lg text-center">
-                <p>{formStatus.message}</p>
-              </div>
-            ) : (
-              <form onSubmit={handleSubmit}>
-                <div className="grid md:grid-cols-2 gap-6 mb-6">
-                  <div>
-                    <label htmlFor="name" className="block text-coffee-brown mb-2">Your Name</label>
-                    <input
-                      type="text"
-                      id="name"
-                      name="name"
-                      value={formData.name}
-                      onChange={handleChange}
-                      className="w-full p-3 rounded-lg border border-coffee-light/30 focus:border-matcha focus:ring-2 focus:ring-matcha/20 outline-none"
-                      required
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block text-coffee-brown mb-2">Your Email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      name="email"
-                      value={formData.email}
-                      onChange={handleChange}
-                      className="w-full p-3 rounded-lg border border-coffee-light/30 focus:border-matcha focus:ring-2 focus:ring-matcha/20 outline-none"
-                      required
-                    />
-                  </div>
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="subject" className="block text-coffee-brown mb-2">Subject</label>
-                  <select
-                    id="subject"
-                    name="subject"
-                    value={formData.subject}
-                    onChange={handleChange}
-                    className="w-full p-3 rounded-lg border border-coffee-light/30 focus:border-matcha focus:ring-2 focus:ring-matcha/20 outline-none"
-                    required
-                  >
-                    <option value="">Select a subject</option>
-                    <option value="general">General Inquiry</option>
-                    <option value="support">Bot Support</option>
-                    <option value="feedback">Feedback</option>
-                    <option value="partnership">Partnership Opportunity</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                
-                <div className="mb-6">
-                  <label htmlFor="message" className="block text-coffee-brown mb-2">Your Message</label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={6}
-                    className="w-full p-3 rounded-lg border border-coffee-light/30 focus:border-matcha focus:ring-2 focus:ring-matcha/20 outline-none"
-                    required
-                  ></textarea>
-                </div>
-                
-                <button 
-                  type="submit" 
-                  className="bg-matcha hover:bg-matcha/90 text-white px-6 py-3 rounded-md inline-flex items-center transition-colors"
-                  disabled={formStatus.submitted && !formStatus.success}
-                >
-                  {formStatus.submitted && !formStatus.success ? (
-                    <>
-                      <span className="animate-spin mr-2">⟳</span>
-                      Sending...
-                    </>
-                  ) : (
-                    <>
-                      <FaPaperPlane className="mr-2" />
-                      Send Message
-                    </>
-                  )}
-                </button>
-              </form>
-            )}
           </div>
         </div>
       </section>

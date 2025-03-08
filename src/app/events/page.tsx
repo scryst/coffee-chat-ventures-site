@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { FaCalendarAlt, FaClock, FaMapMarkerAlt, FaDiscord, FaUsers, FaArrowRight } from 'react-icons/fa';
 import Link from 'next/link';
+import EventCard from '@/components/animations/EventCard';
 
 export default function EventsPage() {
   const [filter, setFilter] = useState('all');
@@ -152,15 +153,17 @@ export default function EventsPage() {
           {/* Events Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map(event => (
-              <div key={event.id} className="card overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-coffee-light/20 relative">
-                  <img 
-                    src={event.image} 
-                    alt={event.title}
-                    className="w-full h-full object-cover"
+              <div key={event.id} className="card overflow-hidden">
+                <div className="relative h-48">
+                  <EventCard 
+                    title={event.title}
+                    date={event.date}
+                    time={event.time}
+                    location={event.location}
+                    category={event.category}
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-5">
                   <h3 className="text-xl font-bold mb-2 text-coffee-brown">{event.title}</h3>
                   
                   <div className="flex items-center text-coffee-light mb-2">

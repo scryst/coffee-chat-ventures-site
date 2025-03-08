@@ -8,8 +8,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'coffee-brown': '#5E4B3E',
+        'coffee-brown': '#5E3A24',
         'coffee-light': '#7D6B5D',
+        'coffee-dark': '#3A2213',
         'cream': '#F8F1E9',
         'latte': '#E8C8A9',
         'matcha': '#88A872',

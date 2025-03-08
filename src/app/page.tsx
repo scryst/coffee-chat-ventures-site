@@ -2,11 +2,13 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { FaCoffee, FaUsers, FaComments, FaDiscord, FaArrowRight, FaInstagram, FaEnvelope } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import CoffeeCup from '@/components/animations/CoffeeCup';
+import CommunityNetwork from '@/components/animations/CommunityNetwork';
+import ChatBubbles from '@/components/animations/ChatBubbles';
 
 export default function Home() {
   return (
@@ -45,13 +47,7 @@ export default function Home() {
             
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/coffee-chat-community.jpg"
-                  alt="Coffee chat community"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                <CoffeeCup />
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-matcha/20 rounded-lg"></div>
               </div>
             </div>
@@ -165,13 +161,7 @@ export default function Home() {
             
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/discord-community-channels.jpg"
-                  alt="Discord community channels"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                <CommunityNetwork />
                 <div className="absolute -top-4 -left-4 w-32 h-32 bg-matcha/20 rounded-lg"></div>
               </div>
             </div>
@@ -212,13 +202,7 @@ export default function Home() {
             
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
-                <Image 
-                  src="/images/coffee-bot.jpg"
-                  alt="Coffee Bot"
-                  fill
-                  className="object-cover"
-                  priority
-                />
+                <ChatBubbles />
                 <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-matcha/20 rounded-lg"></div>
               </div>
             </div>
