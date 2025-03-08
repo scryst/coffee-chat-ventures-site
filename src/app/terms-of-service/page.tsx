@@ -107,6 +107,9 @@ export default function TermsOfServicePage() {
                 FOR ANY INDIRECT, PUNITIVE, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR EXEMPLARY DAMAGES ARISING OUT OF OR IN CONNECTION WITH THESE TERMS OR 
                 THE USE OF OR INABILITY TO USE OUR SERVICES.
               </p>
+              <p>
+                IN NO EVENT SHALL OUR TOTAL LIABILITY TO YOU FOR ALL DAMAGES, LOSSES, OR CAUSES OF ACTION EXCEED ONE HUNDRED DOLLARS ($100.00).
+              </p>
               
               <h2>Indemnity</h2>
               <p>
@@ -114,9 +117,21 @@ export default function TermsOfServicePage() {
                 losses, liabilities, and expenses (including attorneys' fees) arising out of or in connection with your use of our Services or violation of these Terms.
               </p>
               
+              <h2>Dispute Resolution</h2>
+              <p>
+                Any dispute arising from or relating to these Terms or our Services will first be resolved through good-faith negotiations. If such negotiations fail, 
+                all disputes shall be resolved through binding arbitration in accordance with the rules of the American Arbitration Association.
+              </p>
+              
               <h2>Governing Law</h2>
               <p>
-                These Terms shall be governed by the laws of the United States without regard to its conflict of law provisions.
+                These Terms shall be governed by the laws of the State of California without regard to its conflict of law provisions.
+              </p>
+              
+              <h2>Severability</h2>
+              <p>
+                If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated to the minimum extent necessary 
+                so that the Terms will otherwise remain in full force and effect.
               </p>
               
               <h2>Entire Agreement</h2>
@@ -129,8 +144,8 @@ export default function TermsOfServicePage() {
                 If you have any questions about these Terms, please contact us at:
               </p>
               <p>
-                Email: legal@coffeechatventures.com<br />
-                Discord: Join our community server and message the administrators
+                Email: <a href="mailto:coffeechatventures@gmail.com" className="text-coffee-brown hover:underline">coffeechatventures@gmail.com</a><br />
+                Discord: <a href="https://discord.gg/KGE8BfruV4" target="_blank" rel="noopener noreferrer" className="text-coffee-brown hover:underline">Join our community server</a> and message the administrators
               </p>
             </div>
           </div>

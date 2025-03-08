@@ -42,6 +42,15 @@ export default function PrivacyPolicyPage() {
                 <li><strong>Website Data:</strong> When you visit our website, we collect standard log information and details of your visit patterns.</li>
               </ul>
               
+              <h2>Legal Basis for Processing</h2>
+              <p>We process your personal information based on:</p>
+              <ul>
+                <li><strong>Consent:</strong> You have given us permission to process your personal information for specific purposes.</li>
+                <li><strong>Legitimate Interests:</strong> Processing is necessary for our legitimate interests, such as providing and improving our services.</li>
+                <li><strong>Performance of a Contract:</strong> Processing is necessary to fulfill our contractual obligations to you.</li>
+                <li><strong>Legal Obligation:</strong> Processing is necessary to comply with applicable laws.</li>
+              </ul>
+              
               <h2>How We Use Your Information</h2>
               <p>We use the information we collect to:</p>
               <ul>
@@ -62,6 +71,13 @@ export default function PrivacyPolicyPage() {
                 <li>In connection with a business transfer (e.g., merger or acquisition)</li>
               </ul>
               
+              <h2>International Data Transfers</h2>
+              <p>
+                Your information may be transferred to and processed in countries other than the country in which you reside. 
+                These countries may have different data protection laws. When we transfer your information, we will take appropriate 
+                measures to protect your privacy and the personal information we transfer.
+              </p>
+              
               <h2>Data Retention</h2>
               <p>
                 We retain your personal information for as long as necessary to provide our services and fulfill the purposes outlined in this Privacy Policy.
@@ -76,7 +92,18 @@ export default function PrivacyPolicyPage() {
                 <li>Request deletion of your personal information</li>
                 <li>Object to or restrict certain processing of your data</li>
                 <li>Data portability</li>
+                <li>Withdraw consent at any time, where we rely on consent to process your personal information</li>
               </ul>
+              <p>
+                To exercise these rights, please contact us using the information provided at the end of this Privacy Policy.
+                We will respond to your request within 30 days.
+              </p>
+              
+              <h2>Cookies and Tracking Technologies</h2>
+              <p>
+                Our website may use cookies and similar tracking technologies to collect information about your browsing activities.
+                You can control cookies through your browser settings and other tools.
+              </p>
               
               <h2>Security</h2>
               <p>
@@ -90,19 +117,32 @@ export default function PrivacyPolicyPage() {
                 If we learn we have collected personal information from a child under 13, we will delete that information.
               </p>
               
+              <h2>Third-Party Links</h2>
+              <p>
+                Our Services may contain links to third-party websites or services. We are not responsible for the privacy practices 
+                or content of these third-party sites. We encourage you to read the privacy policies of any third-party sites you visit.
+              </p>
+              
+              <h2>California Privacy Rights</h2>
+              <p>
+                California residents may have additional rights regarding their personal information under the California Consumer Privacy Act (CCPA).
+                These rights include the right to know what personal information we collect, the right to request deletion of personal information,
+                and the right to opt-out of the sale of personal information (though we do not sell personal information).
+              </p>
+              
               <h2>Changes to This Privacy Policy</h2>
               <p>
                 We may update this Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page
-                and updating the "Last Updated" date.
+                and updating the "Last Updated" date. For significant changes, we may provide additional notice, such as through Discord or email.
               </p>
               
               <h2>Contact Us</h2>
               <p>
-                If you have any questions about this Privacy Policy, please contact us at:
+                If you have any questions about this Privacy Policy or our data practices, please contact us at:
               </p>
               <p>
-                Email: privacy@coffeechatventures.com<br />
-                Discord: Join our community server and message the administrators
+                Email: <a href="mailto:coffeechatventures@gmail.com" className="text-coffee-brown hover:underline">coffeechatventures@gmail.com</a><br />
+                Discord: <a href="https://discord.gg/KGE8BfruV4" target="_blank" rel="noopener noreferrer" className="text-coffee-brown hover:underline">Join our community server</a> and message the administrators
               </p>
             </div>
           </div>
