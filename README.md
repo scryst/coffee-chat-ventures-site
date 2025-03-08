@@ -19,6 +19,12 @@ Coffee Chat Ventures is a platform centered around a Discord bot named "Coffee" 
 - **High-Quality Imagery**: Professional coffee-themed images throughout the site
 - **Cross-Server Functionality**: Information about how the bot connects users across different Discord servers
 
+## Recent Updates
+
+- **Local Image Storage**: All images are now stored locally in the `/public/images` and `/public/events` directories for improved reliability and faster loading
+- **Consistent Button Styling**: Updated Discord button colors to match the site's coffee-themed color scheme
+- **Fixed Image Display Issues**: Resolved issues with images not displaying properly on the home page and coffee bot page
+
 ## Tech Stack
 
 - **Framework**: Next.js 14.2 with App Router

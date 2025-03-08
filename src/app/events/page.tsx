@@ -153,8 +153,12 @@ export default function EventsPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map(event => (
               <div key={event.id} className="card overflow-hidden hover:shadow-lg transition-shadow">
-                <div className="h-48 bg-coffee-light/20 flex items-center justify-center">
-                  <FaCalendarAlt className="h-16 w-16 text-coffee-light/40" />
+                <div className="h-48 bg-coffee-light/20 relative">
+                  <img 
+                    src={event.image} 
+                    alt={event.title}
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-bold mb-2 text-coffee-brown">{event.title}</h3>
@@ -215,7 +219,7 @@ export default function EventsPage() {
                   href="https://discord.com/api/oauth2/authorize?client_id=1346747859189633074&permissions=2147601408&scope=bot%20applications.commands"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="bg-[#5865F2] hover:bg-[#4752C4] text-white px-6 py-3 rounded-md inline-flex items-center justify-center transition-colors"
+                  className="bg-coffee-brown hover:bg-matcha text-white px-6 py-3 rounded-md inline-flex items-center justify-center transition-colors"
                 >
                   <FaDiscord className="mr-2" />
                   Join Our Discord

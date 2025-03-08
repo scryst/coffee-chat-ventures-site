@@ -46,7 +46,7 @@ export default function Home() {
             <div className="lg:w-1/2 flex justify-center">
               <div className="relative w-full max-w-md h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1573341830496-e89fcae7f5eb?q=80&w=1974&auto=format&fit=crop"
+                  src="/images/coffee-chat-community.jpg"
                   alt="Coffee chat community"
                   fill
                   className="object-cover"
@@ -166,7 +166,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?q=80&w=2071&auto=format&fit=crop"
+                  src="/images/discord-community-channels.jpg"
                   alt="Discord community channels"
                   fill
                   className="object-cover"
@@ -213,7 +213,7 @@ export default function Home() {
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1581089778245-3ce67677f718?q=80&w=2070&auto=format&fit=crop"
+                  src="/images/coffee-bot.jpg"
                   alt="Coffee Bot"
                   fill
                   className="object-cover"

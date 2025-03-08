@@ -134,7 +134,7 @@ export default function CoffeeBotPage() {
             <div className="lg:w-1/2">
               <div className="relative w-full h-80 bg-coffee-light/20 rounded-lg overflow-hidden">
                 <Image 
-                  src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=1965&auto=format&fit=crop"
+                  src="/images/coffee-bot-discord.jpg"
                   alt="Coffee Bot Discord Integration"
                   fill
                   className="object-cover"
