@@ -1,7 +1,7 @@
 "use client";
 
 import Link from 'next/link';
-import { FaCoffee, FaGithub, FaDiscord } from 'react-icons/fa';
+import { FaCoffee, FaGithub, FaDiscord, FaEnvelope, FaInstagram } from 'react-icons/fa';
 import { FaXTwitter } from 'react-icons/fa6';
 
 const Footer = () => {
@@ -23,18 +23,29 @@ const Footer = () => {
             </p>
             <div className="flex gap-4 mt-4">
               <a 
-                href="https://x.com/scryst" 
+                href="https://twitter.com/CoffeeChatVent" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Twitter/X"
               >
                 <FaXTwitter className="h-5 w-5" />
+              </a>
+              <a 
+                href="https://instagram.com/coffeechatventures" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="h-5 w-5" />
               </a>
               <a 
                 href="https://github.com/scryst" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="GitHub"
               >
                 <FaGithub className="h-5 w-5" />
               </a>
@@ -43,8 +54,16 @@ const Footer = () => {
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Discord"
               >
                 <FaDiscord className="h-5 w-5" />
+              </a>
+              <a 
+                href="mailto:coffeechatventures@gmail.com" 
+                className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Email"
+              >
+                <FaEnvelope className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -76,21 +95,34 @@ const Footer = () => {
           </div>
 
           <div className="md:col-span-1">
-            <h3 className="font-bold text-coffee-brown mb-4">Resources</h3>
-            <ul className="space-y-2">
+            <h3 className="font-bold text-coffee-brown mb-4">Contact</h3>
+            <ul className="space-y-2 text-coffee-light">
               <li>
-                <Link href="/contact" className="text-coffee-light hover:text-coffee-brown transition-colors text-sm">
-                  Contact Us
-                </Link>
+                <a 
+                  href="mailto:coffeechatventures@gmail.com"
+                  className="hover:text-coffee-brown transition-colors"
+                >
+                  coffeechatventures@gmail.com
+                </a>
               </li>
               <li>
                 <a 
-                  href="https://discord.gg/KGE8BfruV4" 
-                  target="_blank" 
+                  href="https://discord.gg/KGE8BfruV4"
+                  target="_blank"
                   rel="noopener noreferrer"
-                  className="text-coffee-light hover:text-coffee-brown transition-colors text-sm"
+                  className="hover:text-coffee-brown transition-colors"
                 >
-                  Join Community
+                  Join our Discord
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://twitter.com/CoffeeChatVent"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-coffee-brown transition-colors"
+                >
+                  @CoffeeChatVent
                 </a>
               </li>
             </ul>

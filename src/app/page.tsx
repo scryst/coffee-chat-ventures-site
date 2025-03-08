@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaCoffee, FaUsers, FaComments, FaDiscord, FaArrowRight } from 'react-icons/fa';
+import { FaCoffee, FaUsers, FaComments, FaDiscord, FaArrowRight, FaInstagram, FaEnvelope } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
@@ -226,22 +227,56 @@ export default function Home() {
       </section>
       
       {/* CTA Section */}
-      <section className="py-16">
-        <div className="container mx-auto px-4">
+      <section className="py-16 bg-coffee-brown/5">
+        <div className="container-custom">
           <div className="card max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-bold mb-4 text-coffee-brown">Ready to Join?</h2>
-            <p className="mb-8 text-coffee-light">
-              Join our community today and become part of a growing network of entrepreneurs, 
-              investors, and professionals.
+            <h2 className="text-2xl font-bold mb-4 text-coffee-brown">Ready to Join Our Community?</h2>
+            <p className="mb-6 text-coffee-light">
+              Connect with professionals, entrepreneurs, and investors in our Discord community.
             </p>
-            <a 
-              href="https://discord.gg/KGE8BfruV4"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-coffee-brown hover:bg-matcha text-white px-8 py-3 rounded-md inline-flex items-center justify-center transition-colors"
-            >
-              <FaDiscord className="mr-2" /> Join Community
-            </a>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+              <a 
+                href="https://discord.gg/KGE8BfruV4"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-coffee-brown hover:bg-matcha text-white px-8 py-3 rounded-md inline-flex items-center justify-center transition-colors"
+              >
+                <FaDiscord className="mr-2" /> Join Community
+              </a>
+              <Link 
+                href="/coffee"
+                className="bg-white border-2 border-coffee-brown text-coffee-brown hover:bg-coffee-brown/5 px-8 py-3 rounded-md inline-flex items-center justify-center transition-colors"
+              >
+                <FaCoffee className="mr-2" /> Learn About Coffee Bot
+              </Link>
+            </div>
+            <div className="flex justify-center gap-6 mt-4">
+              <a 
+                href="https://twitter.com/CoffeeChatVent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Twitter/X"
+              >
+                <FaXTwitter className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://instagram.com/coffeechatventures"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Instagram"
+              >
+                <FaInstagram className="h-6 w-6" />
+              </a>
+              <a 
+                href="mailto:coffeechatventures@gmail.com"
+                className="text-coffee-light hover:text-coffee-brown transition-colors"
+                aria-label="Email"
+              >
+                <FaEnvelope className="h-6 w-6" />
+              </a>
+            </div>
           </div>
         </div>
       </section>

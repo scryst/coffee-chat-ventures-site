@@ -3,7 +3,8 @@
 import { useState } from 'react';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
-import { FaEnvelope, FaDiscord, FaTwitter, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaEnvelope, FaDiscord, FaInstagram, FaGithub, FaPaperPlane } from 'react-icons/fa';
+import { FaXTwitter } from 'react-icons/fa6';
 
 export default function ContactPage() {
   const [formData, setFormData] = useState({
@@ -88,7 +89,7 @@ export default function ContactPage() {
                 Join our Discord server and message the moderators directly.
               </p>
               <a 
-                href="https://discord.com/api/oauth2/authorize?client_id=1346747859189633074&permissions=2147601408&scope=bot%20applications.commands"
+                href="https://discord.gg/KGE8BfruV4"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-matcha hover:text-coffee-brown transition-colors inline-flex items-center"
@@ -99,14 +100,50 @@ export default function ContactPage() {
             
             <div className="card text-center p-6 hover:shadow-lg transition-shadow">
               <div className="bg-blue-100 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                <FaTwitter className="h-8 w-8 text-blue-400" />
+                <FaEnvelope className="h-8 w-8 text-blue-500" />
               </div>
-              <h3 className="text-xl font-bold mb-2 text-coffee-brown">Twitter</h3>
+              <h3 className="text-xl font-bold mb-2 text-coffee-brown">Email</h3>
               <p className="text-coffee-light mb-4">
-                Follow us on Twitter for updates and reach out via DM.
+                Send us an email directly and we'll get back to you as soon as possible.
               </p>
               <a 
-                href="https://twitter.com/coffeechatventures"
+                href="mailto:coffeechatventures@gmail.com"
+                className="text-matcha hover:text-coffee-brown transition-colors inline-flex items-center"
+              >
+                coffeechatventures@gmail.com
+              </a>
+            </div>
+            
+            <div className="card text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="bg-gray-100 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                <FaXTwitter className="h-8 w-8 text-gray-800" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-coffee-brown">X / Twitter</h3>
+              <p className="text-coffee-light mb-4">
+                Follow us on X for updates and reach out via direct message.
+              </p>
+              <a 
+                href="https://twitter.com/CoffeeChatVent"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-matcha hover:text-coffee-brown transition-colors inline-flex items-center"
+              >
+                @CoffeeChatVent
+              </a>
+            </div>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            <div className="card text-center p-6 hover:shadow-lg transition-shadow">
+              <div className="bg-purple-100 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
+                <FaInstagram className="h-8 w-8 text-purple-600" />
+              </div>
+              <h3 className="text-xl font-bold mb-2 text-coffee-brown">Instagram</h3>
+              <p className="text-coffee-light mb-4">
+                Follow us on Instagram for visual updates and community highlights.
+              </p>
+              <a 
+                href="https://instagram.com/coffeechatventures"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-matcha hover:text-coffee-brown transition-colors inline-flex items-center"
@@ -117,11 +154,11 @@ export default function ContactPage() {
             
             <div className="card text-center p-6 hover:shadow-lg transition-shadow">
               <div className="bg-gray-100 p-4 rounded-full mx-auto mb-4 w-16 h-16 flex items-center justify-center">
-                <FaGithub className="h-8 w-8 text-gray-700" />
+                <FaGithub className="h-8 w-8 text-gray-800" />
               </div>
               <h3 className="text-xl font-bold mb-2 text-coffee-brown">GitHub</h3>
               <p className="text-coffee-light mb-4">
-                Check out our open source projects and contribute.
+                Check out our open-source projects and contribute to our development.
               </p>
               <a 
                 href="https://github.com/scryst"
@@ -129,7 +166,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="text-matcha hover:text-coffee-brown transition-colors inline-flex items-center"
               >
-                View GitHub
+                @scryst
               </a>
             </div>
           </div>
