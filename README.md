@@ -149,6 +149,13 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 Created by [scryst](https://github.com/scryst)
 
+## Contact & Social Media
+
+- **Email**: coffeechatventures@gmail.com
+- **X/Twitter**: [@CoffeeChatVent](https://twitter.com/CoffeeChatVent)
+- **Instagram**: [@coffeechatventures](https://instagram.com/coffeechatventures)
+- **Discord**: [Join our community](https://discord.gg/KGE8BfruV4)
+
 ## Acknowledgements
 
 - Images from [Unsplash](https://unsplash.com)
